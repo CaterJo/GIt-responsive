@@ -1,9 +1,10 @@
 # GitHub main page
 
-GitHub 사이트의 메인 페이지를 반응형으로 작업합니다.
+GitHub 메인페이지의 퍼블리싱 클론코딩입니다.
 
+## TL;DR
 - 미디어쿼리를 이용한 반응형 웹
-- Semantic Tag준수
+- Semantic Tag 준수
 - BEM방식 class 네이밍.
 
 ## Multi Device
