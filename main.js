@@ -24,4 +24,24 @@
             toggle.classList.remove('on');
         })
     }
+
+
+
+    
+    function captureError(ex) {
+        var errorData = {
+            name: ex.name, // e.g. ReferenceError
+            message: ex.line, // e.g. x is undefined
+            url: document.location.href,
+            stack: ex.stack // stacktrace string; remember, different per-browser!
+        };
+        
+        $.post('/logger/js/', {
+            data: errorData
+        });
+    }
+
+
 })(window, document)
+
+
